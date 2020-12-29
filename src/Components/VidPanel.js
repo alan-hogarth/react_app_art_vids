@@ -2,12 +2,11 @@
 // use video description and url
 import ReactPlayer from "react-player";
 
-const VidPanel = (({video})=>{
+const VidPanel = (({ video })=>{
 
 
-    return (
-    
-        <div>
+    return (   
+        <div className="vid-overview">
             <h3>{video.description}</h3>
             <ReactPlayer 
                 url={video.primaryurl}

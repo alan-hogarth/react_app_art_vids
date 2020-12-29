@@ -9,9 +9,9 @@ const VidList = (({ videos }) => {
     });
 
     return (
-        <>
-        {vidNodes}
-        </>
+        <section id="vid-list">
+            {vidNodes}
+        </section>
     )
 
 });
