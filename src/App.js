@@ -33,12 +33,11 @@ function App() {
   return (
    <>
       <h1>Harvard Museum Videos</h1>
-      
-      <VidList videos={vidFilter}/>
-     
       <div id="top-area">
       <VidFilter onUserInput={handleUserFilter}/>
       </div>
+      <VidList videos={vidFilter}/>
+      
    </>
   );
 }

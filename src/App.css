@@ -43,17 +43,27 @@ body {
 
 h1 {
   text-align: center;
+  background-color: rgb(177, 201, 213);
+  margin-left: 280px;
+  margin-right: 290px;
+  border: solid 2px black;
+
 }
 
 #top-area {
-  width: 100%;
   display: flex;
   height: fit-content;
   justify-content: center;
+  top: 100%;
+  position: relative;
+  order: 1;
+  align-items: flex-start;
 }
 
 #vid-list {
   display: flex;
+  position: relative;
+  top: 80px;
   flex-flow: row wrap;
   height: fit-content;
   justify-content: center;
