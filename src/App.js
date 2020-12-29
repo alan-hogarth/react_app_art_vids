@@ -23,7 +23,8 @@ function App() {
   }, [])
 
   return (
-   <>hello
+   <>
+      <h1>Harvard Museum Videos</h1>
       <VidList videos={videos}/>
    </>
   );
