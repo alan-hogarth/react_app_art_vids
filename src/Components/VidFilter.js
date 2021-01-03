@@ -7,7 +7,7 @@ const VidFilter = (({ onUserInput })=> {
 
     return (
         <>
-        <span>Video Filter: </span>
+        <span>Filter by Title: </span>
         <input
         type="text"
         placeholder="search..."

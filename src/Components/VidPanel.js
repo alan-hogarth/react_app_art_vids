@@ -7,13 +7,12 @@ const VidPanel = (({ video })=>{
 
     return (   
         <div className="vid-overview">
-            <h3>{video.description}</h3>
+            <h3>Title: {video.description}</h3>
             <ReactPlayer 
                 url={video.primaryurl}
                 controls="true"
                 />
         </div>
-      
     )
 });
 

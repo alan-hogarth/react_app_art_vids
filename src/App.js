@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import './App.css';
 import VidList from "./Components/VidList";
 import VidFilter from "./Components/VidFilter";
@@ -6,6 +7,7 @@ import VidFilter from "./Components/VidFilter";
 function App() {
   const [videos, setVideos] = useState([]);
   const [vidFilter, setVidFilter] = useState([]);
+  
   
   const fetchVideos = ()=> {
 
@@ -19,6 +21,7 @@ function App() {
       });
   };
 
+
   const handleUserFilter = (userInput) => {
     const someVids = videos.filter((currentVid) => {
       return currentVid.description.toUpperCase().includes(userInput.toUpperCase());
@@ -30,16 +33,20 @@ function App() {
     fetchVideos();
   }, [])
 
+
   return (
-   <>
-      <h1>Harvard Museum Videos</h1>
-      <div id="top-area">
-      <VidFilter onUserInput={handleUserFilter}/>
-      </div>
-      <VidList videos={vidFilter}/>
-      
-   </>
+    
+      <>
+           <h1>Harvard Museum Videos</h1>
+              <div id="top-area">
+              <VidFilter onUserInput={handleUserFilter}/>
+              </div>
+              <VidList videos={vidFilter}/>
+      </>
+   
   );
 }
 
 export default App;
+
+
